@@ -1,0 +1,12 @@
+@import './variables.scss';
+
+.test {
+  color: var(--color-red);
+  .nested {
+    color: var(--color-blue);
+  }
+}
+
+.test2 {
+  color: green;
+}

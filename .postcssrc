@@ -1,0 +1,8 @@
+{
+  "plugins": {
+    "postcss-autoreset": true,
+    "postcss-initial": true,
+    "autoprefixer": true,
+    "cssnano": true
+  }
+}
