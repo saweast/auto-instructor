@@ -2,7 +2,7 @@
   "name": "auto-instructor",
   "version": "1.0.0",
   "repository": "https://github.com/saweast/auto-instructor.git",
-  "author": "Vadym Lavorchuk <vadym@space48.com>",
+  "author": "Vadym Lavorchuk <lavorchukvadim@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "parcel serve ./src/index.html",
