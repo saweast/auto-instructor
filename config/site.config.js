@@ -9,10 +9,10 @@ if (!ROOT) {
 
 const config = {
   // Your website's name, used for favicon meta tags
-  site_name: 'Static Site Boilerplate',
+  site_name: 'auto-instructor-roman',
 
   // Your website's description, used for favicon meta tags
-  site_description: 'A modern boilerplate for static website development',
+  site_description: 'Индивидуальные курсы вождения',
 
   // Your website's URL, used for sitemap
   site_url: '',

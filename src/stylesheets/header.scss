@@ -1,0 +1,107 @@
+.header {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.logo {
+  display: flex;
+  gap: 1.5rem;
+
+  .logo__image {
+    height: 6rem;
+    width: 6rem;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .logo__info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+  }
+
+  .logo__title {
+    font-size: 3.3rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .logo__description {
+    display: inline-flex;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-font-secondary);
+    opacity: 0.6;
+  }
+}
+
+.info {
+  display: flex;
+  gap: 5rem;
+  height: 6rem;
+  align-items: center;
+
+  .info__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .info__phone {
+    font-size: 2.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--color-font-primary);
+    text-decoration: none;
+  }
+
+  .info__schedule {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-font-secondary);
+    opacity: 0.6;
+  }
+
+  .info__networkList {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.3rem;
+
+    .info__network {
+      list-style: none;
+      font-size: 0;
+    }
+  }
+}
+
+.network {
+  height: 3.6rem;
+  width: 3.6rem;
+  border-radius: 50%;
+  display: flex;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &.nework--facebook {
+    background-image: url(../images/facebook.svg);
+  }
+
+  &.nework--instagram {
+    background-image: url(../images/instagram.svg);
+  }
+
+  &.nework--telegram {
+    background-image: url(../images/telegram.svg);
+  }
+}
