@@ -1,0 +1,85 @@
+// Load CSS Reset from NPM
+@import "~normalize.css";
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  display: flex;
+  gap: 1.5rem;
+
+  .logo__image {
+    height: 6rem;
+    width: 6rem;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .logo__info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+  }
+
+  .logo__title {
+    font-size: 3.3rem;
+    font-weight: 700;
+  }
+
+  .logo__description {
+    display: inline-flex;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-font-secondary);
+  }
+}
+
+.info {
+  display: flex;
+
+  .info__contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info__phone {
+
+  }
+
+  .info__schedule {
+
+  }
+
+  .info__networkList {
+    .info__network {
+
+    }
+  }
+}
+
+.network {
+
+  &.nework--facebook {
+
+  }
+
+  &.nework--instagram {
+
+  }
+
+  &.nework--telegram {
+
+  }
+}
