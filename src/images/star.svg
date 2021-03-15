@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="20px" viewBox="0 0 22 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Star</title>
+    <g id="landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="web" transform="translate(-234.000000, -2447.000000)" fill="#F7B500">
+            <polygon id="Star" points="245 2463.5 238.534362 2466.89919 239.769189 2459.69959 234.538378 2454.60081 241.767181 2453.55041 245 2447 248.232819 2453.55041 255.461622 2454.60081 250.230811 2459.69959 251.465638 2466.89919"></polygon>
+        </g>
+    </g>
+</svg>

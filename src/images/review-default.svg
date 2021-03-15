@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86px" height="86px" viewBox="0 0 86 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 15</title>
+    <defs>
+        <circle id="path-1" cx="43" cy="43" r="43"></circle>
+    </defs>
+    <g id="landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="web" transform="translate(-779.000000, -2258.000000)">
+            <g id="Group-15" transform="translate(779.000000, 2258.000000)">
+                <g id="Oval-3">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Oval-Copy-28" fill="#D8D8D8" xlink:href="#path-1"></use>
+                </g>
+                <circle id="Oval-Copy-14" fill="#FFFFFF" cx="42.5" cy="34.5" r="7.5"></circle>
+                <path d="M36.2534813,44.0632804 C39.4613221,45.1394116 41.6585744,45.6774771 42.8452381,45.6774771 C43.9839494,45.6774771 45.9800865,45.1820188 48.8336496,44.1911022 C52.0418166,43.07704 55.5456723,44.7746544 56.659728,47.9828237 C56.8849848,48.6315004 57,49.3133254 57,50 L57,51 C57,55.418278 53.418278,59 49,59 L36,59 C31.581722,59 28,55.418278 28,51 L28,50 C28,46.5416504 30.8035463,43.738104 34.261896,43.738104 C34.9389733,43.738104 35.6115692,43.8479144 36.2534813,44.0632804 Z" id="Rectangle-Copy-24" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

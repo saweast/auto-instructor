@@ -1,6 +1,10 @@
 // Load CSS Reset from NPM
 @import "~normalize.css";
+@import '~slick-carousel/slick/slick.scss';
 @import './variables.scss';
 @import './common.scss';
 @import './button.scss';
 @import './header.scss';
+@import './skill-list.scss';
+@import './benefit-list.scss';
+@import './review-list.scss';

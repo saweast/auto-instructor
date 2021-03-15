@@ -1,0 +1,70 @@
+.benefitList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem 8rem;
+  max-width: var(--max-width-content);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10rem;
+
+  .benefitList__title {
+    flex-basis: 100%;
+    flex-shrink: 0;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .benefit {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    flex-basis: calc(100% / 4 - 8rem);
+
+    .benefit__icon {
+      height: 13rem;
+      width: 13rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      flex-shrink: 0;
+
+      &.benefit__wheel {
+        background-image: url(../images/benefit-wheel.svg);
+      }
+
+      &.benefit__feather {
+        background-image: url(../images/benefit-feather.svg);
+      }
+
+      &.benefit__point {
+        background-image: url(../images/benefit-point.svg);
+      }
+
+      &.benefit__schedule {
+        background-image: url(../images/benefit-schedule.svg);
+      }
+    }
+
+    .benefit__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .benefit__title {
+      font-size: 2.4rem;
+      line-height: 1.2;
+      margin-top: 0;
+      margin-bottom: 1.8rem;
+    }
+
+    .benefit__description {
+      font-size: 1.8rem;
+      margin-top: 0;
+      margin-bottom: 0;
+      color: var(--color-font-secondary);
+    }
+  }
+}
