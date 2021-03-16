@@ -1,0 +1,62 @@
+.stageList {
+  max-width: var(--max-width-content);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 15.8rem 5.4rem;
+
+  .stageList__title {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-basis: 100%;
+  }
+
+  .stage {
+    flex-basis: calc(50% - 5.4rem);
+    gap: 8.2rem;
+    display: flex;
+    position: relative;
+
+    .stage__number {
+      font-size: 4.7rem;
+      height: 10rem;
+      width: 10rem;
+      border-radius: 5rem;
+      border-color: var(--color-accent);
+      border-width: 0.5rem;
+      border-style: solid;
+      display: flex;
+      line-height: 1;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      flex-shrink: 0;
+      position: relative;
+      top: -2rem;
+    }
+
+    .stage__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stage__title {
+      font-size: 2.4rem;
+      line-height: 1.2;
+      margin-top: 0;
+      margin-bottom: 1.8rem;
+    }
+
+    .stage__description {
+      font-size: 1.8rem;
+      margin-top: 0;
+      margin-bottom: 0;
+      color: var(--color-font-secondary);
+    }
+  }
+}

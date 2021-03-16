@@ -1,0 +1,38 @@
+.instructorMessageList {
+  max-width: var(--max-width-content);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10rem;
+  padding: 8.5rem 17.4rem;
+  border-radius: 3.5rem;
+  display: flex;
+  gap: 23.9rem;
+  background-color: var(--background-main);
+}
+
+.instructorMessage {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(100% / 2 - 23.9rem / 2);
+}
+
+.instructorMessage__image {
+  margin-bottom: 5.2rem;
+  width: 100%;
+  border-radius: 1.1rem;
+  overflow: hidden;
+
+  .instructorMessage__imageItem {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.instructorMessage__message {
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--color-font-secondary);
+}

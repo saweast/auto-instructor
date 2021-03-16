@@ -1,13 +1,18 @@
 .header {
   width: 100%;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
   position: sticky;
   top: 0;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  background-color: var(--background-main);
+  z-index: 1;
+}
+
+.header__wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
