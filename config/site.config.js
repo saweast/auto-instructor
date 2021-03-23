@@ -15,7 +15,7 @@ const config = {
   site_description: 'Индивидуальные курсы вождения',
 
   // Your website's URL, used for sitemap
-  site_url: '',
+  site_url: 'https://saweast.github.io/auto-instructor/',
 
   // Google Analytics tracking ID (leave blank to disable)
   googleAnalyticsUA: '',

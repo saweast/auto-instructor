@@ -34,7 +34,8 @@
     "lint:js": "./node_modules/.bin/eslint \"src/**/*.js\"",
     "lint:styles": "stylelint \"src/**/*.scss\"",
     "build:dist": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.js",
-    "deploy": "node ./config/site.deploy.js"
+    "deploy": "node ./config/site.deploy.js",
+    "gh-deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
@@ -83,6 +84,7 @@
     "enquirer": "^2.3.1",
     "figlet": "^1.2.3",
     "ftp-deploy": "^2.3.3",
+    "gh-pages": "^3.1.0",
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1",
     "reset-css": "^4.0.1",
