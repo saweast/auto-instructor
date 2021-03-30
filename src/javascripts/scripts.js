@@ -13,6 +13,22 @@ document.addEventListener('DOMContentLoaded', () => {
       slidesToScroll: 1,
       arrows: true,
       variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            variableWidth: false,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            variableWidth: false,
+          },
+        },
+      ],
     });
   }
 });

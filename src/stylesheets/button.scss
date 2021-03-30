@@ -4,13 +4,27 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding-top: 2.2rem;
-  padding-bottom: 2.2rem;
-  padding-left: 4.8rem;
-  padding-right: 4.8rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
   text-decoration: none;
   border-radius: var(--border-radius);
   color: var(--color-font-primary);
   font-size: 1.8rem;
   line-height: 1;
+
+  @media (min-width: $medium) {
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  @media (min-width: $large) {
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+  }
 }

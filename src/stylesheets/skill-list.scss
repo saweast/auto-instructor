@@ -2,18 +2,30 @@
   max-width: var(--max-width-content);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10rem;
-  padding: 12.5rem 11.5rem;
-  border-radius: 3.5rem;
+  margin-bottom: calc(var(--padding) * 2);
+  padding: calc(var(--padding) * 2) var(--padding);
+  border-radius: 1.5rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 10rem;
+  gap: 4rem;
   background-color: var(--background-main);
 
+  @media (min-width: $large) {
+    gap: 10rem;
+    margin-bottom: 10rem;
+    padding: 12.5rem 11.5rem;
+    border-radius: 3.5rem;
+  }
+
   .skill {
-    width: calc(50% - 10rem);
+    width: 100%;
     display: flex;
-    gap: 4.2rem;
+    gap: var(--padding);
+
+    @media (min-width: $large) {
+      width: calc(50% - 10rem);
+      gap: 4.2rem;
+    }
 
     .skill__icon {
       height: 8.7rem;
@@ -46,17 +58,25 @@
     }
 
     .skill__title {
-      font-size: 2.4rem;
+      font-size: 1.8rem;
       line-height: 1.2;
       margin-top: 0;
       margin-bottom: 1rem;
+
+      @media (min-width: $large) {
+        font-size: 2.4rem;
+      }
     }
 
     .skill__description {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       margin-top: 0;
       margin-bottom: 0;
       color: var(--color-font-secondary);
+
+      @media (min-width: $large) {
+        font-size: 1.8rem;
+      }
     }
   }
 }

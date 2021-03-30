@@ -2,30 +2,52 @@
   max-width: var(--max-width-content);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10rem;
+  margin-bottom: calc(var(--padding) * 2);
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+
+  @media (min-width: $large) {
+    margin-bottom: 10rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   .reviewList__title {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     line-height: 1.2;
     margin-top: 0;
-    margin-bottom: 8rem;
+    margin-bottom: calc(var(--padding) * 2);
+    text-align: center;
+
+    @media (min-width: $large) {
+      margin-bottom: 8rem;
+      font-size: 2.4rem;
+    }
   }
 
   .slick-list {
-    /* important, allows overflow slides to be visible */
-    overflow: visible;
+    @media (min-width: $large) {
+      /* important, allows overflow slides to be visible */
+      overflow: visible;
+    }
   }
 
   .slick-arrow {
     position: absolute;
-    top: -11.8rem;
-    height: 4.8rem;
-    width: 4.8rem;
+    top: -5.7rem;
+    height: 3.4rem;
+    width: 3.4rem;
     background-color: var(--color-font-primary);
     color: var(--background-main);
     appearance: none;
     border-radius: 2.4rem;
     font-size: 0;
+
+    @media (min-width: $large) {
+      top: -11.8rem;
+      height: 4.8rem;
+      width: 4.8rem;
+    }
 
     &.slick-disabled {
       opacity: 0.6;
@@ -47,7 +69,12 @@
     }
 
     &.slick-prev {
-      right: calc(4.8rem + 1.8rem);
+      left: 0;
+
+      @media (min-width: $large) {
+        left: unset;
+        right: calc(4.8rem + 1.8rem);
+      }
 
       &::after {
         content: "<";
@@ -56,41 +83,86 @@
   }
 
   .slick-track {
-    padding-left: calc((100vh - 159rem) / 2);
+    @media (min-width: $large) {
+      padding-left: calc((100vh - 159rem) / 2);
+    }
   }
 
   .review {
     background-color: var(--background-main);
     display: flex;
     flex-direction: column;
-    border-radius: 3.6rem;
-    padding: 5.3rem 7rem;
+    border-radius: var(--padding);
+    padding: calc(var(--padding) * 2) var(--padding);
     width: 100%;
-    max-width: 49rem;
-    margin-right: 6rem;
+    margin-left: var(--padding);
+    margin-right: var(--padding);
+
+    @media (min-width: $large) {
+      border-radius: 3.6rem;
+      padding: 5.3rem 7rem;
+      margin-right: 6rem;
+      max-width: 49rem;
+    }
 
     &:last-child {
       margin-right: 0;
     }
 
+    .review__info {
+      display: flex;
+      gap: var(--padding);
+      flex-wrap: wrap;
+      margin-bottom: 2.4rem;
+
+      @media (min-width: $large) {
+        display: block;
+        margin-bottom: 0;
+      }
+    }
+
+    .review__info-meta {
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+      justify-content: center;
+
+      @media (min-width: $large) {
+        display: block;
+      }
+    }
+
     .review__image {
       height: 8.6rem;
       width: 8.6rem;
-      margin-bottom: 5.7rem;
+      margin-bottom: 0;
+
+      @media (min-width: $large) {
+        margin-bottom: 5.7rem;
+      }
     }
 
     .review__title {
-      font-size: 2.4rem;
+      font-size: 1.8rem;
       line-height: 1.2;
       margin-top: 0;
-      margin-bottom: 1.8rem;
+      margin-bottom: 0;
+
+      @media (min-width: $large) {
+        font-size: 2.4rem;
+        margin-bottom: 1.8rem;
+      }
     }
 
     .review__rating {
       display: flex;
       flex-direction: row;
       gap: 0.3rem;
-      margin-bottom: 1.3rem;
+      margin-bottom: 0;
+
+      @media (min-width: $large) {
+        margin-bottom: 1.3rem;
+      }
 
       .star {
         height: 2.2rem;
@@ -103,10 +175,14 @@
     }
 
     .review__feedback {
-      font-size: 2.4rem;
+      font-size: 1.8rem;
       line-height: 1.2;
       margin-top: 0;
       margin-bottom: 0;
+
+      @media (min-width: $large) {
+        font-size: 2.4rem;
+      }
     }
   }
 }
