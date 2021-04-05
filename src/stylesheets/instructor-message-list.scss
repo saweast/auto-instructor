@@ -2,18 +2,31 @@
   max-width: var(--max-width-content);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10rem;
-  padding: 8.5rem 17.4rem;
-  border-radius: 3.5rem;
+  margin-bottom: 5rem;
+  padding: 3rem var(--padding);
+  border-radius: var(--padding);
   display: flex;
-  gap: 23.9rem;
+  gap: 5rem;
   background-color: var(--background-main);
+  flex-direction: column;
+
+  @media (min-width: $large) {
+    margin-bottom: 10rem;
+    padding: 8.5rem 17.4rem;
+    border-radius: 3.5rem;
+    gap: 23.9rem;
+    flex-direction: row;
+  }
 }
 
 .instructorMessage {
   display: flex;
   flex-direction: column;
-  flex-basis: calc(100% / 2 - 23.9rem / 2);
+  flex-basis: 100%;
+
+  @media (min-width: $large) {
+    flex-basis: calc(100% / 2 - 23.9rem / 2);
+  }
 }
 
 .instructorMessage__image {
