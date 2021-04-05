@@ -2,12 +2,18 @@
   max-width: var(--max-width-content);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10rem;
-  padding: 6rem 11rem;
-  border-radius: 3.5rem;
+  margin-bottom: 5rem;
+  padding: 2rem var(--padding);
+  border-radius: 1.5rem;
   display: flex;
-  gap: 8rem;
+  gap: 2rem;
   background-color: var(--background-main);
+
+  @media (min-width: $large) {
+    padding: 6rem 11rem;
+    border-radius: 3.5rem;
+    gap: 8rem;
+  }
 
   .support__content {
     flex-basis: calc(40% - 4rem);
@@ -18,17 +24,27 @@
   }
 
   .supportContent__title {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     line-height: 1.2;
     margin-top: 0;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.5rem;
+
+    @media (min-width: $large) {
+      font-size: 2.4rem;
+      margin-bottom: 1.8rem;
+    }
   }
 
   .supportContent__description {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin-top: 0;
     color: var(--color-font-secondary);
-    margin-bottom: 5rem;
+    margin-bottom: 2.5rem;
+
+    @media (min-width: $large) {
+      font-size: 1.8rem;
+      margin-bottom: 5rem;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -36,11 +52,16 @@
   }
 
   .support__imageList {
-    flex-basis: calc(60% - 4rem);
+    flex-basis: calc(60% - var(--padding));
     display: flex;
     flex-wrap: wrap;
-    gap: 4.8rem;
+    gap: var(--padding);
     width: 100%;
+
+    @media (min-width: $large) {
+      flex-basis: calc(60% - 4rem);
+      gap: 4.8rem;
+    }
 
     .supportImage {
       border-radius: 1.1rem;
@@ -54,7 +75,11 @@
       }
 
       &.supportImage--half {
-        flex-basis: calc(100% / 2 - 2.4rem);
+        flex-basis: 100%;
+
+        @media (min-width: $large) {
+          flex-basis: calc(100% / 2 - 2.4rem);
+        }
       }
 
       &.supportImage--full {
