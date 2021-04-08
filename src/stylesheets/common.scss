@@ -2,11 +2,6 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
   background-color: var(--background-main);
-  padding-top: 8.4rem;
-
-  @media (min-width: $large) {
-    padding-top: 12.4rem;
-  }
 
   * {
     box-sizing: border-box;
@@ -15,4 +10,8 @@ body {
 
 html {
   font-size: 10px;
+}
+
+main {
+  overflow: hidden;
 }

@@ -13,8 +13,8 @@
   @media (min-width: $large) {
     gap: 2rem 8rem;
     margin-bottom: 10rem;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: calc(var(--padding) * 2);
+    padding-right: calc(var(--padding) * 2);
   }
 
   .benefitList__title {

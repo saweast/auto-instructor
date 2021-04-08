@@ -13,8 +13,8 @@
   @media (min-width: $large) {
     margin-bottom: 15rem;
     gap: 15.8rem 5.4rem;
-    padding-left: unset;
-    padding-right: unset;
+    padding-left: calc(var(--padding) * 2);
+    padding-right: calc(var(--padding) * 2);
   }
 
   .stageList__title {

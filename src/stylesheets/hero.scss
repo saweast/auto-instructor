@@ -7,25 +7,40 @@
   max-width: var(--max-width-content);
   margin-left: auto;
   margin-right: auto;
-  align-items: flex-start;
   padding-left: var(--padding);
   padding-right: var(--padding);
   flex-direction: column;
+  align-items: center;
+  position: relative;
 
   @media (min-width: $large) {
-    padding-left: 0;
-    padding-right: 0;
     flex-direction: row;
-    align-items: center;
+    padding-left: calc(var(--padding) * 2);
+    padding-right: calc(var(--padding) * 2);
   }
 
   .hero__text {
     padding-top: calc(var(--padding) * 4);
     padding-bottom: calc(var(--padding) * 4);
-    width: 100%;
+    display: inline-grid;
+    width: auto;
+    position: absolute;
+    z-index: 11;
+    transform: translateY(50%);
+    padding-left: calc(var(--padding) * 2);
+    padding-right: calc(var(--padding) * 2);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: var(--padding);
 
     @media (min-width: $large) {
+      position: static;
       flex-basis: 50%;
+      display: block;
+      transform: none;
+      padding-left: 0;
+      padding-right: 0;
+      background-color: transparent;
+      border-radius: 0;
     }
   }
 
@@ -65,11 +80,11 @@
   }
 
   .hero__images {
-    padding-top: 20rem;
+    padding-top: 5rem;
     position: relative;
-    display: none;
 
     @media (min-width: $large) {
+      padding-top: 20rem;
       flex-basis: 50%;
       order: 1;
       display: block;
